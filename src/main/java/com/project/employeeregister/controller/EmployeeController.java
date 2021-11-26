@@ -40,7 +40,7 @@ public class EmployeeController {
         employee.setFirstName(employeeNew.getFirstName());
         employee.setLastName(employeeNew.getLastName());
         employee.setTitle(employeeNew.getTitle());
-        employee.setSalary(employee.getSalary());
+        employee.setSalary(employeeNew.getSalary());
         Employee updatedEmployee = employeeRepository.save(employee);
         return ResponseEntity.ok(updatedEmployee);
     }
